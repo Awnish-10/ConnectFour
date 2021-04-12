@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGP" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connect4.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="298.0" minWidth="225.0" prefWidth="225.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDisc" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <VBox prefHeight="486.0" prefWidth="236.0" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="nameButton" layoutX="12.0" layoutY="111.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Set Names" />
+                  <TextField fx:id="textField1" layoutX="14.0" layoutY="36.0" prefHeight="25.0" prefWidth="200.0" promptText="Player One Name" />
+                  <TextField fx:id="textField2" layoutX="12.0" layoutY="69.0" prefHeight="25.0" prefWidth="200.0" promptText="Player Two name" />
+               </children>
+            </Pane>
+            <Label fx:id="playerNameLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="46.0" prefWidth="404.0" text="Player 1" textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="383.0" text="Turn" textFill="#f5f3f3">
+               <font>
+                  <Font size="26.0" />
+               </font></Label>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+         </children></VBox>
+    </children>
+</GridPane>
